@@ -1,0 +1,40 @@
+{
+  "name": "point-collector",
+  "description": "Collector of points",
+  "version": "0.0.4",
+  "author": "Codenautas <codenautas@googlegroups.com>",
+  "repository": "codenautas/point-collector",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+      "backend-plus": "~0.18.25"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-nc": "mocha --reporter spec --bail --check-leaks --no-colors test/",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-cli": "node server/karma-server.js --karma karma.conf.js --single-run",
+    "test-cli-h": "node server/karma-server.js --karma karma.conf.js",
+    "test-cli-ff": "npm run test-cli -- --browsers Firefox",
+    "test-cli-saf": "npm run test-cli -- --browsers Safari",
+    "start": "node server/server-point-collector.js",
+    "report": "istanbul report",
+    "all": "npm test && npm run test-cov && npm run report && qa-control . -v"
+  },
+  "qa-control": {
+    "package-version": "0.3.0",
+    "coverage": 90,
+    "run-in": "server",
+    "stability": "extending",
+    "type": "app",
+    "ecmaVersion": 6
+  }
+}

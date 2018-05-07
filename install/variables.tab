@@ -1,0 +1,14 @@
+variable|padre|pantalla|tipo|leyenda|orden
+fecha_relevamiento||principal|timestamp||100
+sector||principal|texto||110
+manzana||principal|texto||120
+lado||principal|texto||130
+secuencia||principal|numero||140
+puerta||principal|texto||150
+nivel||principal|numero||160
+puntos||principal|arreglo objetos punto||170
+punto|puntos|principal|objeto punto||180
+fecha|punto|principal|timestamp||190
+latitud|punto|principal|real||200
+longitud|punto|principal|real||210
+observaciones||principal|texto||220

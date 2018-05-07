@@ -1,0 +1,63 @@
+CACHE MANIFEST
+
+# Version 0.0.19
+
+#--------------------------- HTMLs ---------------------------------
+index.html
+
+#--------------------------- JS ------------------------------------
+js/app-cache.js
+js/relevador.js
+js/interfaz.js
+js/local-storage.js
+js/geolocation.js
+js/functions.js
+
+#links iOS
+js/hack-links-ios.js
+
+#jquery y librerias externas
+lib/jquery/jquery-1.9.1.min.js
+lib/bootstrap-3.3.7-dist/js/bootstrap.min.js
+#lib/offlineJS/js/offline.min.js
+lib/jquery-loading-overlay/loadingoverlay.min.js
+lib/jquery-loading-overlay/loadingoverlay.min.js
+
+#------------------------------ CSS ---------------------------------
+
+#bootstrap
+lib/bootstrap-3.3.7-dist/css/bootstrap.min.css
+
+#offlineJS
+#lib/offlineJS/css/offline-language-spanish-indicator.css
+#lib/offlineJS/css/offline-theme-chrome-indicator.css
+#lib/offlineJS/css/offline-language-spanish.css
+
+#estilos propios
+css/styles.css
+
+#------------------------------ BOOTSTRAP ICONS-------------------------
+lib/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot
+lib/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg
+lib/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf
+lib/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff
+lib/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2
+
+#------------------------------ IMAGES ---------------------------------
+
+images/apple-icon-57x57.png
+images/apple-icon-60x60.png
+images/apple-icon-72x72.png
+images/apple-icon-76x76.png
+images/apple-icon-114x114.png
+images/apple-icon-120x120.png
+images/apple-icon-144x144.png
+images/apple-icon-152x152.png
+images/apple-icon-180x180.png
+images/android-icon-192x192.png
+images/favicon-32x32.png
+images/favicon-96x96.png
+images/favicon-16x16.png
+
+NETWORK:
+*

@@ -1,0 +1,83 @@
+.offline-ui{
+    position: relative;
+    left: 0px;
+}
+#interactive.viewport video{
+    width: 100%;
+}
+#botonera{
+    margin-bottom: 10px;
+}
+.loadingoverlay{
+    display: block !important;
+}
+.wait-message{
+    color : #202020;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 445px;
+}
+#required-data{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#niveles .btn{
+    padding: 0px;
+    font-size: 18px;
+}
+.btn{
+    padding: 4px 8px;
+}
+#contenedor-manzana, #contenedor-lado, #contenedor-modo, #contenedor-puerta{
+    padding-left: 0;
+}
+#contenedor-sector, #contenedor-manzana, #contenedor-lado, #contenedor-secuencia, #contenedor-boton-puntos {
+    padding-right: 5px;
+}
+.input-to-label{
+    background:rgba(0,0,0,0);
+    border:none;
+}
+#tabla-puntos{
+    margin-bottom: 0px;
+}
+#tabla-puntos input {
+    display: block; 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    width: 100%;
+}
+#tabla-puntos td, #tabla-puntos th {
+    margin: 0; 
+    padding: 2px 0;
+}
+#obtener-posicion{
+    height: 48px;
+    min-width:100%;
+}
+#relevar{
+    font-size: 14px;
+}
+#relevar input, #relevar textarea{
+    font-size: 16px;
+    padding: 0 5px;
+}
+.container{
+    padding-top: 10px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.offline-ui{
+   padding: 0;
+   font-size: 13px;
+}
+.no-padding{
+   padding: 0;
+}
+#point-1.error td input, #point-2.error td input{
+    color: #ffffff;
+    background-color: #d9534f;
+}

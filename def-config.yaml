@@ -1,0 +1,50 @@
+server:
+  port: 3055
+  base-url: /point-collector
+db:
+  motor: postgresql
+  host: localhost
+  database: pointcollector_db
+  schema: poco
+  user: user
+  password: pass
+install:
+  dump:
+    db:
+      owner: pointcollector_owner
+    scripts:
+      post-adapt: [para_ordenar_ten.fun.sql]
+    skip-content: true
+login:
+  table: usuarios
+  userFieldName: usuario
+  passFieldName: md5clave
+  rolFieldName: rol
+  infoFieldList: [usuario, rol]
+  activeClausule: current_timestamp<=activo_hasta or activo_hasta is null
+  lockedClausule: current_timestamp>=bloqueado_desde
+  plus:
+    allowHttpLogin: true
+    secret: secret cat in the point-collector
+    loginForm:
+      formTitle: recolector de puntos
+      usernameLabel: usuario
+      passwordLabel: clave
+      buttonLabel: entrar
+      formImg: img/login-lock-icon.png
+    chPassForm:
+      usernameLabel: usuario
+      oldPasswordLabel: clave anterior
+      newPasswordLabel: nueva clave
+      repPasswordLabel: repetir nueva clave
+      buttonLabel: Cambiar
+      formTitle: Cambio de clave
+  messages:
+    userOrPassFail: el nombre de usuario no existe o la clave no corresponde
+    lockedFail: el usuario se encuentra bloqueado
+    inactiveFail: es usuario está marcado como inactivo
+client-setup:
+  cursors: true
+  lang: es
+  skin: ""
+  menu: true
